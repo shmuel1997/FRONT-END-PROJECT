@@ -1,22 +1,25 @@
 
 <div  *ngIf="!endGame" class="matching-game">
     <div>
-        <mat-card (click)="selectOriginWord(index)" *ngFor="let word of wordsToDisplay; let index=index" class="cards">
+      <app-display-word [word]="word.origin" [wordStatus]="wordStatusOrigin[index]" (click)="selectOriginWord(index)" *ngFor="let word of wordsToDisplay; let index=index"></app-display-word>
+       <!--  <mat-card   class="cards">
          <mat-card-content>
              <div >
                  {{ word?.origin }}
                  </div>
          </mat-card-content>    
-       </mat-card> 
+       </mat-card>  -->
      </div>    
        <div>
-       <mat-card  (click)="selectTargetWord(index)" *ngFor="let word of wordsToDisplayTarget let index=index" class="cards">
+        <app-display-word [word]="word.target" [wordStatus]="wordStatusTarget[index]" (click)="selectTargetWord(index)" *ngFor="let word of wordsToDisplayTarget; let index=index"></app-display-word>
+
+      <!--  <mat-card  (click)="selectTargetWord(index)" *ngFor="let word of wordsToDisplayTarget let index=index" class="cards">
          <mat-card-content>
              <div >
                  {{ word?.target }}
                  </div>
          </mat-card-content>    
-       </mat-card>  
+       </mat-card>  --> 
        </div>
 </div>
 <div *ngIf="endGame">
@@ -25,12 +28,6 @@
 <p>amount of attempts: {{tryCount}}</p>
 
 <table mat-table [dataSource]="wordsToDisplay" class="mat-elevation-z8">
-
-  <!--- Note that these columns can be defined in any order.
-        The actual rendered columns are set as a property on the row definition" -->
-
-
-
   <!-- Name Column -->
   <ng-container matColumnDef="OriginWord">
     <th mat-header-cell *matHeaderCellDef> origin word </th>

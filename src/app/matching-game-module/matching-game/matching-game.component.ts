@@ -2,17 +2,17 @@ import { Component, Input } from '@angular/core';
 import { CategoriesService } from '../../services/categories.service';
 import { TranslatedWord } from '../../../shared/model/translated-word';
 import { WordStatus } from '../models/wordStatus.enum';
-import { MatCardModule } from '@angular/material/card';
 import { NgForOf, NgIf } from '@angular/common';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogMatchGameComponent } from '../dialog-match-game/dialog-match-game.component';
 import { Category } from '../../../shared/model/category';
 import { MatTableModule } from '@angular/material/table';
+import { DisplayWordComponent } from '../display-word/display-word.component';
 
 @Component({
   selector: 'app-matching-game',
   standalone: true,
-  imports: [MatCardModule, NgForOf, MatTableModule, NgIf],
+  imports: [ NgForOf, MatTableModule, NgIf,DisplayWordComponent],
   templateUrl: './matching-game.component.html',
   styleUrl: './matching-game.component.css'
 })

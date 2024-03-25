@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DisplayWordComponent } from './display-word.component';
+import { ExitGameComponent } from './exit-game.component';
 
-describe('DisplayWordComponent', () => {
-  let component: DisplayWordComponent;
-  let fixture: ComponentFixture<DisplayWordComponent>;
+describe('ExitGameComponent', () => {
+  let component: ExitGameComponent;
+  let fixture: ComponentFixture<ExitGameComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [DisplayWordComponent]
+      imports: [ExitGameComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(DisplayWordComponent);
+    fixture = TestBed.createComponent(ExitGameComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
