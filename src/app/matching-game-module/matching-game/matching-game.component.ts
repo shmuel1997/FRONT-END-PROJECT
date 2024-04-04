@@ -1,11 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { CategoriesService } from '../../services/categories.service';
-import { TranslatedWord } from '../../../shared/model/translated-word';
-import { WordStatus } from '../models/wordStatus.enum';
+import { TranslatedWord } from '../../shared/model/translated-word';
+import { WordStatus } from '../../shared/model/wordStatus.enum';
 import { NgForOf, NgIf } from '@angular/common';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogMatchGameComponent } from '../dialog-match-game/dialog-match-game.component';
-import { Category } from '../../../shared/model/category';
+import { Category } from '../../shared/model/category';
 import { MatTableModule } from '@angular/material/table';
 import { DisplayWordComponent } from '../display-word/display-word.component';
 

@@ -1,6 +1,6 @@
-import { Category } from "../model/category";
-import { Language } from "../model/language";
-import { TranslatedWord } from "../model/translated-word";
+import { Category } from "../../app/shared/model/category";
+import { Language } from "../../app/shared/model/language";
+import { TranslatedWord } from "../../app/shared/model/translated-word";
 
 let animalsCategory = 
     new Category(1, "Animals", Language.English, Language.Hebrew);

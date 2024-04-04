@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Category } from '../../shared/model/category';
+import { Category } from '../shared/model/category';
 import { CategoriesService } from '../services/categories.service';
 import { MatCardModule } from '@angular/material/card';
 import { NgForOf, NgIf } from '@angular/common';

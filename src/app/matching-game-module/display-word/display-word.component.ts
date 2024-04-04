@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { WordStatus } from '../models/wordStatus.enum';
+import { WordStatus } from '../../shared/model/wordStatus.enum';
 import { MatCardModule } from '@angular/material/card';
 import { NgClass } from '@angular/common';
 

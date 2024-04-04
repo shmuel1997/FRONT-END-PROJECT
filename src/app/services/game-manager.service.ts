@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { GameProfile } from '../../shared/model/gameProfile';
-import { GameDifficulty } from '../../shared/model/gameDifficulty.enum';
+import { GameProfile } from '../shared/model/gameProfile';
+import { GameDifficulty } from '../shared/model/gameDifficulty.enum';
 
 @Injectable({
   providedIn: 'root'
